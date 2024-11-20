@@ -7,7 +7,7 @@ public class Incrementador implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 100000; i +=1) {
             contador.incrementar();
         }
         System.out.println(Thread.currentThread().getName() + " terminou de incrementar");
